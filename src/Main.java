@@ -50,27 +50,21 @@ public class Main {
 
     public static void main(String[] args) {
         Main library = new Main();
+        // testing the functionality 
+        library.borrowBook("Ahmed", "Pragmatic Programmer");
+        
+        library.borrowBook("Adham", "Data Intensive Applications");
 
-        // Borrowing books
-        library.borrowBook("Alice", "Java Programming");
-        library.borrowBook("Bob", "Data Structures");
-
-        // Display all borrowed books
         library.displayAllBorrowedBooks();
 
-        // Check if Charlie has borrowed any books
         library.checkBorrowedBook("Charlie");
 
-        // Borrow a book only if it's not already borrowed
-        library.borrowBookIfNotBorrowed("Java Programming", "Charlie");
+        library.borrowBookIfNotBorrowed("Pragmatic Programmer", "Charlie");
 
-        // Borrow another book
         library.borrowBookIfNotBorrowed("Operating Systems", "Charlie");
 
-        // Return a book
         library.returnBook("Alice");
 
-        // Display all borrowed books after return
         library.displayAllBorrowedBooks();
 
     }
